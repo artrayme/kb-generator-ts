@@ -1,0 +1,2678 @@
+
+concept_human
+=> nrel_main_idtf:
+          [human] (*<-lang_en;;*);
+          [человек] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (human)] (*<-lang_en;;*);       
+      [Опр. (человек)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [common name of Homo sapiens, unique extant species of the genus Homo, from embryo to adult] (*<-lang_en;;*);       
+      [общественное существо, обладающее разумом и сознанием; субъект, относящийся к виду Человек разумный] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+=> nrel_basic_decomposition: concept_human_body;
+=> nrel_inclusion: concept_full_name;
+=> nrel_inclusion: concept_persons_age;
+=> nrel_inclusion: concept_gender;
+=> nrel_inclusion: concept_self_consciousness;
+=> nrel_inclusion: concept_self_awareness;
+=> nrel_inclusion: concept_personality;
+=> nrel_inclusion: concept_sociality;
+=> nrel_inclusion: concept_perspective_taking;
+=> nrel_inclusion: concept_phase_of_human_life;
+=> nrel_inclusion: concept_human_behavior;
+=> nrel_inclusion: concept_interpersonal_relationship;
+=> nrel_inclusion: concept_intelligence;
+=> nrel_inclusion: concept_kinship;
+=> nrel_inclusion: concept_bipedalism;
+=> nrel_part_of: concept_alien;
+=> nrel_part_of: concept_society;
+=> nrel_part_of: concept_biosphere;
+=> nrel_topics_main_template: concept_Template_Infobox_person;
+=> nrel_topics_main_template: concept_Template_Infobox_Biography2;
+=> nrel_topics_main_template: concept_Template_Infobox_person_Wikidata;
+=> nrel_topics_main_category: concept_Category_Humans;
+=> nrel_described_by_source: concept_Jewish_Encyclopedia_of_Brockhaus_and_Efron;
+=> nrel_described_by_source: concept_Bible_Encyclopedia_of_Archimandrite_Nicephorus;
+=> nrel_described_by_source: concept_Granat_Encyclopedic_Dictionary;
+=> nrel_described_by_source: concept_Catholic_Encyclopedia;
+=> nrel_described_by_source: concept_Brockhaus_and_Efron_Encyclopedic_Dictionary;
+=> nrel_described_by_source: concept_Small_Brockhaus_and_Efron_Encyclopedic_Dictionary;
+=> nrel_studied_by: concept_anthropology;
+=> nrel_studied_by: concept_human_ecology;
+=> nrel_uses: concept_artificial_physical_object;
+=> nrel_uses: concept_tool;
+=> nrel_uses: concept_language;
+=> nrel_said_to_be_the_same_as: concept_Homo_sapiens;
+=> nrel_said_to_be_the_same_as: concept_Adam;
+=> nrel_produced_sound: concept_voice;
+=> nrel_on_focus_list_of_Wikimedia_project: concept_Wikipedia_List_of_articles_all_languages_should_have;
+=> nrel_on_focus_list_of_Wikimedia_project: concept_Wikipedia_Vital_articles_Level_4;
+=> nrel_different_from: concept_people;
+=> nrel_different_from: concept_fictional_character;
+=> nrel_different_from: concept_person;
+=> nrel_different_from: concept_Human;
+=> nrel_model_item: Douglas_Adams;
+=> nrel_model_item: Marie_Curie;
+=> nrel_model_item: Leonardo_da_Vinci;
+=> nrel_model_item: Joan_of_Arc;
+=> nrel_model_item: Sun_Tzu;
+=> nrel_model_item: Carl_Linnaeus;
+=> nrel_instance_of: concept_organisms_known_by_a_particular_common_name;
+=> nrel_has_effect: concept_artificial_entity;
+=> nrel_physically_interacts_with: concept_natural_environment;
+=> nrel_physically_interacts_with: concept_human_food;
+=> nrel_physically_interacts_with: concept_Earth;
+=> nrel_participant_in: concept_human_activity;
+=> nrel_history_of_topic: concept_human_history;
+<- concept_natural_person;
+<- concept_omnivore;
+<- concept_mammal;
+<- concept_person;
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_human_body
+=> nrel_main_idtf:
+          [human body] (*<-lang_en;;*);
+          [человеческое тело] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (human body)] (*<-lang_en;;*);       
+      [Опр. (человеческое тело)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [entire structure of a human organism] (*<-lang_en;;*);       
+      [тело человеческой особи] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_full_name
+=> nrel_main_idtf:
+          [полное имя] (*<-lang_ru;;*);
+          [full name] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (полное имя)] (*<-lang_ru;;*);       
+      [Def. (full name)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [set of names by which an individual is known] (*<-lang_en;;*);       
+      [полное имя персоны] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_persons_age
+=> nrel_main_idtf:
+          [person&#39;s age] (*<-lang_en;;*);
+          [возраст человека] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (person&#39;s age)] (*<-lang_en;;*);       
+      [Опр. (возраст человека)] (*<-lang_ru;;*);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_gender
+=> nrel_main_idtf:
+          [gender] (*<-lang_en;;*);
+          [гендер] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (gender)] (*<-lang_en;;*);       
+      [Опр. (гендер)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [диапазон физических, психологических и поведенческих характеристик между мужским и женским] (*<-lang_ru;;*);       
+      [characteristics distinguishing between femininity and masculinity] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_self_consciousness
+=> nrel_main_idtf:
+          [самосознание] (*<-lang_ru;;*);
+          [self-consciousness] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (самосознание)] (*<-lang_ru;;*);       
+      [Def. (self-consciousness)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [acute sense of self-awareness; preoccupation with oneself] (*<-lang_en;;*);       
+      [ощущение, состояние] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_self_awareness
+=> nrel_main_idtf:
+          [self-awareness] (*<-lang_en;;*);
+          [самосознание] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (self-awareness)] (*<-lang_en;;*);       
+      [Опр. (самосознание)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [осознание всех внутренних и внешних процессов деятельности] (*<-lang_ru;;*);       
+      [capacity for an individual to consciously know and understand one&#39;s own character, feelings, motives, and desires] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_personality
+=> nrel_main_idtf:
+          [индивидуальность] (*<-lang_ru;;*);
+          [personality] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (индивидуальность)] (*<-lang_ru;;*);       
+      [Def. (personality)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [psychological characteristics of an individual] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_sociality
+=> nrel_main_idtf:
+          [sociality] (*<-lang_en;;*);
+          [социальность] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (sociality)] (*<-lang_en;;*);       
+      [Опр. (социальность)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [degree to which individuals in an animal population tend to associate in social groups and form cooperative societies] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_perspective_taking
+=> nrel_main_idtf:
+          [perspective-taking] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (perspective-taking)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [the act of perceiving a situation or understanding a concept from an alternative point of view] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_phase_of_human_life
+=> nrel_main_idtf:
+          [phase of human life] (*<-lang_en;;*);
+          [фаза человеческой жизни] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (phase of human life)] (*<-lang_en;;*);       
+      [Опр. (фаза человеческой жизни)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [stage in the development of a human being] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_human_behavior
+=> nrel_main_idtf:
+          [human behavior] (*<-lang_en;;*);
+          [человеческое поведение] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (human behavior)] (*<-lang_en;;*);       
+      [Опр. (человеческое поведение)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [array of physical actions and observable emotions associated with humans] (*<-lang_en;;*);       
+      [диапазон повадок Homo Sapiens] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_interpersonal_relationship
+=> nrel_main_idtf:
+          [interpersonal relationship] (*<-lang_en;;*);
+          [межличностные отношения] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (interpersonal relationship)] (*<-lang_en;;*);       
+      [Опр. (межличностные отношения)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [strong, deep, or close association or acquaintance between two or more people] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_intelligence
+=> nrel_main_idtf:
+          [интеллект] (*<-lang_ru;;*);
+          [intelligence] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (интеллект)] (*<-lang_ru;;*);       
+      [Def. (intelligence)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [mental faculty] (*<-lang_en;;*);       
+      [качество психики] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_kinship
+=> nrel_main_idtf:
+          [kinship] (*<-lang_en;;*);
+          [родство] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (kinship)] (*<-lang_en;;*);       
+      [Опр. (родство)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [human relationship term; web of social relationships that form an important part of the lives of most humans in most societies; form of social connection] (*<-lang_en;;*);       
+      [отношение между людьми на основе общности по предку или потомку] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_bipedalism
+=> nrel_main_idtf:
+          [bipedalism] (*<-lang_en;;*);
+          [передвижение на двух] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (bipedalism)] (*<-lang_en;;*);       
+      [Опр. (передвижение на двух)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [form of terrestrial locomotion where an organism moves by means of its two limbs or legs] (*<-lang_en;;*);       
+      [форма наземного передвижения, при которой организм передвигается на двух конечностях или ногах] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_alien
+=> nrel_main_idtf:
+          [alien] (*<-lang_en;;*);
+          [человечество] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (alien)] (*<-lang_en;;*);       
+      [Опр. (человечество)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [совокупность всех людей] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_society
+=> nrel_main_idtf:
+          [society] (*<-lang_en;;*);
+          [общество] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (society)] (*<-lang_en;;*);       
+      [Опр. (общество)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [group of people related to each other through persistent relations] (*<-lang_en;;*);       
+      [совокупность взаимозависимых людей] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_biosphere
+=> nrel_main_idtf:
+          [биосфера] (*<-lang_ru;;*);
+          [biosphere] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (биосфера)] (*<-lang_ru;;*);       
+      [Def. (biosphere)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [global sum of all ecosystems] (*<-lang_en;;*);       
+      [оболочка Земли, заселённая живыми организмами] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Template_Infobox_person
+=> nrel_main_idtf:
+          [Template:Infobox person] (*<-lang_en;;*);
+          [Шаблон:Персона] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Template:Infobox person)] (*<-lang_en;;*);       
+      [Опр. (Шаблон:Персона)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [Wikimedia template] (*<-lang_en;;*);       
+      [шаблон проекта Викимедиа] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Template_Infobox_Biography2
+=> nrel_main_idtf:
+          [Template:Infobox Biography2] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Template:Infobox Biography2)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [шаблон проекта Викимедиа] (*<-lang_ru;;*);       
+      [Wikipedia template page: LUA based infobox for biographic articles] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Template_Infobox_person_Wikidata
+=> nrel_main_idtf:
+          [Template:Infobox person/Wikidata] (*<-lang_en;;*);
+          [Шаблон:Персона/Викиданные] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Template:Infobox person/Wikidata)] (*<-lang_en;;*);       
+      [Опр. (Шаблон:Персона/Викиданные)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [Wikimedia template that is driven by Wikidata] (*<-lang_en;;*);       
+      [шаблон в проекте Викимедиа] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Category_Humans
+=> nrel_main_idtf:
+          [Category:Humans] (*<-lang_en;;*);
+          [Категория:Человек] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Category:Humans)] (*<-lang_en;;*);       
+      [Опр. (Категория:Человек)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [Wikimedia category] (*<-lang_en;;*);       
+      [категория в проекте Викимедиа] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Jewish_Encyclopedia_of_Brockhaus_and_Efron
+=> nrel_main_idtf:
+          [Еврейская энциклопедия Брокгауза и Ефрона, 1906—1913] (*<-lang_ru;;*);
+          [Jewish Encyclopedia of Brockhaus and Efron] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (Еврейская энциклопедия Брокгауза и Ефрона, 1906—1913)] (*<-lang_ru;;*);       
+      [Def. (Jewish Encyclopedia of Brockhaus and Efron)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [энциклопедия в 16 томах, выпущенная в 1906—1913 годах] (*<-lang_ru;;*);       
+      [encyclopedia] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Bible_Encyclopedia_of_Archimandrite_Nicephorus
+=> nrel_main_idtf:
+          [Библейская энциклопедия архимандрита Никифора] (*<-lang_ru;;*);
+          [Bible Encyclopedia of Archimandrite Nicephorus] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (Библейская энциклопедия архимандрита Никифора)] (*<-lang_ru;;*);       
+      [Def. (Bible Encyclopedia of Archimandrite Nicephorus)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [энциклопедия, изданная в 1891—1892 в Москве] (*<-lang_ru;;*);       
+      [encyclopedia, published in 1891–1892 in Moscow] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Granat_Encyclopedic_Dictionary
+=> nrel_main_idtf:
+          [Энциклопедический словарь Гранат] (*<-lang_ru;;*);
+          [Granat Encyclopedic Dictionary] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (Энциклопедический словарь Гранат)] (*<-lang_ru;;*);       
+      [Def. (Granat Encyclopedic Dictionary)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [универсальное российское справочное издание 1892 года] (*<-lang_ru;;*);       
+      [seventh edition of Russian encyclopedic dictionary] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Catholic_Encyclopedia
+=> nrel_main_idtf:
+          [Catholic Encyclopedia] (*<-lang_en;;*);
+          [Католическая энциклопедия, 1913] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Catholic Encyclopedia)] (*<-lang_en;;*);       
+      [Опр. (Католическая энциклопедия, 1913)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [English-language encyclopedia] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Brockhaus_and_Efron_Encyclopedic_Dictionary
+=> nrel_main_idtf:
+          [Brockhaus and Efron Encyclopedic Dictionary] (*<-lang_en;;*);
+          [Энциклопедический словарь Брокгауза и Ефрона, 1890—1907] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Brockhaus and Efron Encyclopedic Dictionary)] (*<-lang_en;;*);       
+      [Опр. (Энциклопедический словарь Брокгауза и Ефрона, 1890—1907)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [российская энциклопедия, изданная в 1890—1907 годах] (*<-lang_ru;;*);       
+      [comprehensive multi-volume encyclopedia in Russian] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Small_Brockhaus_and_Efron_Encyclopedic_Dictionary
+=> nrel_main_idtf:
+          [Малый энциклопедический словарь Брокгауза и Ефрона] (*<-lang_ru;;*);
+          [Small Brockhaus and Efron Encyclopedic Dictionary] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (Малый энциклопедический словарь Брокгауза и Ефрона)] (*<-lang_ru;;*);       
+      [Def. (Small Brockhaus and Efron Encyclopedic Dictionary)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [универсальное справочное издание 1899—1902 гг.] (*<-lang_ru;;*);       
+      [Russian encyclopedic dictionary] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_anthropology
+=> nrel_main_idtf:
+          [антропология] (*<-lang_ru;;*);
+          [anthropology] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (антропология)] (*<-lang_ru;;*);       
+      [Def. (anthropology)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [совокупность научных дисциплин, занимающихся изучением человека] (*<-lang_ru;;*);       
+      [scientific study of humans, human behavior, and societies] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_human_ecology
+=> nrel_main_idtf:
+          [Социальная экология] (*<-lang_ru;;*);
+          [human ecology] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (Социальная экология)] (*<-lang_ru;;*);       
+      [Def. (human ecology)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [interdisciplinary and transdisciplinary study of the relationship between humans and their natural, social, and built environments] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_artificial_physical_object
+=> nrel_main_idtf:
+          [artificial physical object] (*<-lang_en;;*);
+          [артефакт] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (artificial physical object)] (*<-lang_en;;*);       
+      [Опр. (артефакт)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [physical object made or shaped by human hand] (*<-lang_en;;*);       
+      [материальный объект, созданный человеком] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_tool
+=> nrel_main_idtf:
+          [инструмент] (*<-lang_ru;;*);
+          [tool] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (инструмент)] (*<-lang_ru;;*);       
+      [Def. (tool)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [physical item that can be used to achieve a goal] (*<-lang_en;;*);       
+      [искусственный физический объект для выполнения работы, действия] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_language
+=> nrel_main_idtf:
+          [язык] (*<-lang_ru;;*);
+          [language] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (язык)] (*<-lang_ru;;*);       
+      [Def. (language)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [средство передачи информации] (*<-lang_ru;;*);       
+      [structured system of communication] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Homo_sapiens
+=> nrel_main_idtf:
+          [Homo sapiens] (*<-lang_en;;*);
+          [человек разумный] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Homo sapiens)] (*<-lang_en;;*);       
+      [Опр. (человек разумный)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [species of mammal] (*<-lang_en;;*);       
+      [научное имя для биологического вида, к которому принадлежит человек] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Adam
+=> nrel_main_idtf:
+          [Адам] (*<-lang_ru;;*);
+          [Adam] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (Адам)] (*<-lang_ru;;*);       
+      [Def. (Adam)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [first man according to the Abrahamic creation and religions such as Judaism, Christianity and Islam] (*<-lang_en;;*);       
+      [согласно Библии, первый человек на Земле] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_voice
+=> nrel_main_idtf:
+          [voice] (*<-lang_en;;*);
+          [голос] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (voice)] (*<-lang_en;;*);       
+      [Опр. (голос)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [sound made by a human being using the vocal tract] (*<-lang_en;;*);       
+      [звук, издаваемый человеком] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Wikipedia_List_of_articles_all_languages_should_have
+=> nrel_main_idtf:
+          [Wikipedia:List of articles all languages should have] (*<-lang_en;;*);
+          [Википедия:Список статей, которые должны быть во всех языковых версиях] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Wikipedia:List of articles all languages should have)] (*<-lang_en;;*);       
+      [Опр. (Википедия:Список статей, которые должны быть во всех языковых версиях)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [официальный список тем, единый для всех языковых версий] (*<-lang_ru;;*);       
+      [list of 1000 articles every Wikipedia should have] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Wikipedia_Vital_articles_Level_4
+=> nrel_main_idtf:
+          [Википедия:Список статей, которые должны быть во всех языковых версиях/10000] (*<-lang_ru;;*);
+          [Wikipedia:Vital articles/Level/4] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (Википедия:Список статей, которые должны быть во всех языковых версиях/10000)] (*<-lang_ru;;*);       
+      [Def. (Wikipedia:Vital articles/Level/4)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [статья-список в проекте Викимедиа] (*<-lang_ru;;*);       
+      [Wikimedia project page] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_people
+=> nrel_main_idtf:
+          [people] (*<-lang_en;;*);
+          [народ] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (people)] (*<-lang_en;;*);       
+      [Опр. (народ)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [plurality of persons considered as a whole, from a government perspective] (*<-lang_en;;*);       
+      [совокупность людей] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_fictional_character
+=> nrel_main_idtf:
+          [персонаж в искусстве] (*<-lang_ru;;*);
+          [fictional character] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (персонаж в искусстве)] (*<-lang_ru;;*);       
+      [Def. (fictional character)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [fictional human or non-human character in a narrative work of art] (*<-lang_en;;*);       
+      [участник действия в произведении искусства (литература, кинематограф, живопись)] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_person
+=> nrel_main_idtf:
+          [личность] (*<-lang_ru;;*);
+          [person] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (личность)] (*<-lang_ru;;*);       
+      [Def. (person)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [being that has certain capacities or attributes constituting personhood (avoid use with P31; use Q5 for humans)] (*<-lang_en;;*);       
+      [человек (реальный или вымышленный) со своими индивидуальными особенностями с социокультурной точки зрения] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Human
+=> nrel_main_idtf:
+          [Human] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Human)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [fictional species in Minecraft] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_natural_person
+=> nrel_main_idtf:
+          [natural person] (*<-lang_en;;*);
+          [физическое лицо] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (natural person)] (*<-lang_en;;*);       
+      [Опр. (физическое лицо)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [real human being as opposed to a non-human legal person] (*<-lang_en;;*);       
+      [человек как субъект права] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_omnivore
+=> nrel_main_idtf:
+          [всеядное животное] (*<-lang_ru;;*);
+          [omnivore] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (всеядное животное)] (*<-lang_ru;;*);       
+      [Def. (omnivore)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [organism consuming a variety of foods, usually including both plants and animals as diet] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_mammal
+=> nrel_main_idtf:
+          [mammal] (*<-lang_en;;*);
+          [млекопитающее] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (mammal)] (*<-lang_en;;*);       
+      [Опр. (млекопитающее)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [vertebrate animals in which the young are nourished with milk from special mammary glands of the mother] (*<-lang_en;;*);       
+      [позвоночные животные, у которых детеныши питаются молоком из особых молочных желез матери] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_organisms_known_by_a_particular_common_name
+=> nrel_main_idtf:
+          [organisms known by a particular common name] (*<-lang_en;;*);
+          [группа организмов, известная по народному названию] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (organisms known by a particular common name)] (*<-lang_en;;*);       
+      [Опр. (группа организмов, известная по народному названию)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [living organism Wikidata metaclass] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_artificial_entity
+=> nrel_main_idtf:
+          [искусственный объект] (*<-lang_ru;;*);
+          [artificial entity] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (искусственный объект)] (*<-lang_ru;;*);       
+      [Def. (artificial entity)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [необязательно материальный, но созданный человеком] (*<-lang_ru;;*);       
+      [anything created by humans (either material or mental)] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_natural_environment
+=> nrel_main_idtf:
+          [окружающая среда] (*<-lang_ru;;*);
+          [natural environment] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (окружающая среда)] (*<-lang_ru;;*);       
+      [Def. (natural environment)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [all living and non-living things occurring naturally on Earth or some region thereof] (*<-lang_en;;*);       
+      [природные, экологические условия местности] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_human_food
+=> nrel_main_idtf:
+          [human food] (*<-lang_en;;*);
+          [человеческая еда] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (human food)] (*<-lang_en;;*);       
+      [Опр. (человеческая еда)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [food eaten by Homo sapiens] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Earth
+=> nrel_main_idtf:
+          [Earth] (*<-lang_en;;*);
+          [Земля] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Earth)] (*<-lang_en;;*);       
+      [Опр. (Земля)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [third planet from the Sun in the Solar System] (*<-lang_en;;*);       
+      [планета, на которой зародилось и обитает человечество] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_human_activity
+=> nrel_main_idtf:
+          [human activity] (*<-lang_en;;*);
+          [человеческая деятельность] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (human activity)] (*<-lang_en;;*);       
+      [Опр. (человеческая деятельность)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [activity initiated by a human, intentionally or unintentionally] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_human_history
+=> nrel_main_idtf:
+          [human history] (*<-lang_en;;*);
+          [всемирная история] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (human history)] (*<-lang_en;;*);       
+      [Опр. (всемирная история)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [Процесс развития человеческого общества в целом, для которого характерны закономерности, проявляющиеся в истории всех народов.] (*<-lang_ru;;*);       
+      [narrative of humanity&#39;s past] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_sport
+=> nrel_main_idtf:
+          [sport] (*<-lang_en;;*);
+          [спорт] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (sport)] (*<-lang_en;;*);       
+      [Опр. (спорт)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [forms of competitive activity, usually physical] (*<-lang_en;;*);       
+      [деятельность по состязаниям и физической культуре] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+=> nrel_topics_main_Wikimedia_portal: concept_Portal_Sports;
+=> nrel_topics_main_category: concept_Category_Sports;
+=> nrel_topics_main_template: concept_Template_Infobox_sport_overview;
+=> nrel_different_from: concept_sports_discipline;
+=> nrel_different_from: concept_type_of_sport;
+=> nrel_different_from: concept_sports_competition;
+=> nrel_different_from: concept_physical_preparedness;
+=> nrel_inclusion: concept_type_of_sport;
+=> nrel_practiced_by: concept_athlete;
+=> nrel_practiced_by: concept_sportsperson;
+=> nrel_has_use: concept_physical_fitness;
+=> nrel_has_use: concept_pleasure;
+=> nrel_on_focus_list_of_Wikimedia_project: concept_Wikipedia_List_of_articles_all_languages_should_have;
+=> nrel_on_focus_list_of_Wikimedia_project: concept_Wikipedia_Vital_articles_Level_4;
+=> nrel_Wikimedia_outline: concept_outline_of_sports;
+=> nrel_maintained_by_WikiProject: concept_WikiProject_Sports;
+=> nrel_uses: concept_sports_equipment;
+=> nrel_uses: concept_pitch;
+=> nrel_uses: concept_sports_field;
+=> nrel_uses: concept_sports_venue;
+=> nrel_uses: concept_sports_location;
+=> nrel_instance_of: concept_academic_discipline;
+=> nrel_described_by_source: concept_Metropolitan_Museum_of_Art_Tagging_Vocabulary;
+=> nrel_described_by_source: concept_Gender_Glossar;
+=> nrel_said_to_be_the_same_as: concept_game_based_sport;
+=> nrel_part_of: concept_sport_games_physical_exercises;
+<- concept_physical_activity;
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Portal_Sports
+=> nrel_main_idtf:
+          [Portal:Sports] (*<-lang_en;;*);
+          [Портал:Спорт] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Portal:Sports)] (*<-lang_en;;*);       
+      [Опр. (Портал:Спорт)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [Wikipedia portal for content related to Sports] (*<-lang_en;;*);       
+      [обзорная страница в проекте Викимедиа] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_physical_activity
+=> nrel_main_idtf:
+          [physical activity] (*<-lang_en;;*);
+          [физическая активность] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (physical activity)] (*<-lang_en;;*);       
+      [Опр. (физическая активность)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [human physical activity consisting of voluntary bodily movement by skeletal muscles] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Category_Sports
+=> nrel_main_idtf:
+          [Category:Sports] (*<-lang_en;;*);
+          [Категория:Спорт] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Category:Sports)] (*<-lang_en;;*);       
+      [Опр. (Категория:Спорт)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [Wikimedia category] (*<-lang_en;;*);       
+      [категория в проекте Викимедиа] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Template_Infobox_sport_overview
+=> nrel_main_idtf:
+          [Template:Infobox sport overview] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Template:Infobox sport overview)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [шаблон проекта Викимедиа] (*<-lang_ru;;*);       
+      [Wikimedia template] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_sports_discipline
+=> nrel_main_idtf:
+          [спортивная дисциплина] (*<-lang_ru;;*);
+          [sports discipline] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (спортивная дисциплина)] (*<-lang_ru;;*);       
+      [Def. (sports discipline)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [subtype of a sport, an event within a sport] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_type_of_sport
+=> nrel_main_idtf:
+          [вид спорта] (*<-lang_ru;;*);
+          [type of sport] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (вид спорта)] (*<-lang_ru;;*);       
+      [Def. (type of sport)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [конкретный вид спортивного соревнования] (*<-lang_ru;;*);       
+      [specific sport. Do not use with P279 (subclass of)] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_sports_competition
+=> nrel_main_idtf:
+          [sports competition] (*<-lang_en;;*);
+          [спортивное соревнование] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (sports competition)] (*<-lang_en;;*);       
+      [Опр. (спортивное соревнование)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [событие] (*<-lang_ru;;*);       
+      [event, during which one or more sporting events are held] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_physical_preparedness
+=> nrel_main_idtf:
+          [physical preparedness] (*<-lang_en;;*);
+          [физическая подготовка] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (physical preparedness)] (*<-lang_en;;*);       
+      [Опр. (физическая подготовка)] (*<-lang_ru;;*);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_athlete
+=> nrel_main_idtf:
+          [athlete] (*<-lang_en;;*);
+          [спортсмен] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (athlete)] (*<-lang_en;;*);       
+      [Опр. (спортсмен)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [person who participates regularly in a sport] (*<-lang_en;;*);       
+      [человек, занимающийся спортом] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_sportsperson
+=> nrel_main_idtf:
+          [sportsperson] (*<-lang_en;;*);
+          [человек, связанный со спортом] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (sportsperson)] (*<-lang_en;;*);       
+      [Опр. (человек, связанный со спортом)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [person involved in a sports community] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_physical_fitness
+=> nrel_main_idtf:
+          [physical fitness] (*<-lang_en;;*);
+          [Фитнес] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (physical fitness)] (*<-lang_en;;*);       
+      [Опр. (Фитнес)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [state of health and well-being and, more specifically, the ability to perform aspects of sports, occupations and daily activities] (*<-lang_en;;*);       
+      [вид физической активности, который направлен на поддержание хорошей физической формы] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_pleasure
+=> nrel_main_idtf:
+          [удовольствие] (*<-lang_ru;;*);
+          [pleasure] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (удовольствие)] (*<-lang_ru;;*);       
+      [Def. (pleasure)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [broad class of mental states that humans and other animals experience as positive, enjoyable, or worth seeking] (*<-lang_en;;*);       
+      [Это ощущения, создающие положительный эмоциональный фон.] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_outline_of_sports
+=> nrel_main_idtf:
+          [outline of sports] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (outline of sports)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [overview of and topical guide to sports] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_WikiProject_Sports
+=> nrel_main_idtf:
+          [WikiProject Sports] (*<-lang_en;;*);
+          [Проект:Спорт] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (WikiProject Sports)] (*<-lang_en;;*);       
+      [Опр. (Проект:Спорт)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [Wikimedia subject-area collaboration] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_sports_equipment
+=> nrel_main_idtf:
+          [спортивный инвентарь] (*<-lang_ru;;*);
+          [sports equipment] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (спортивный инвентарь)] (*<-lang_ru;;*);       
+      [Def. (sports equipment)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [предмет для спортивных занятий] (*<-lang_ru;;*);       
+      [object used for sport or exercise] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_pitch
+=> nrel_main_idtf:
+          [pitch] (*<-lang_en;;*);
+          [спортивная площадка] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (pitch)] (*<-lang_en;;*);       
+      [Опр. (спортивная площадка)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [flat area of grass that can be used for sports usually being played on grass] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_sports_field
+=> nrel_main_idtf:
+          [sports field] (*<-lang_en;;*);
+          [спортивное поле] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (sports field)] (*<-lang_en;;*);       
+      [Опр. (спортивное поле)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [outdoor sports facility] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_sports_venue
+=> nrel_main_idtf:
+          [sports venue] (*<-lang_en;;*);
+          [спортивное сооружение] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (sports venue)] (*<-lang_en;;*);       
+      [Опр. (спортивное сооружение)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [facility (building, structure, or place) dedicated to sports] (*<-lang_en;;*);       
+      [открытая или огороженная площадка, здание, специально оборудованное, в том числе инвентарем, и предназначенные для проведения спортивных игр, занятий спортом или физической культурой] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_sports_location
+=> nrel_main_idtf:
+          [sports location] (*<-lang_en;;*);
+          [спортивное место] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (sports location)] (*<-lang_en;;*);       
+      [Опр. (спортивное место)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [site where a sport is practiced, whether dedicated to it or not] (*<-lang_en;;*);       
+      [место для занятие спортом] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_academic_discipline
+=> nrel_main_idtf:
+          [academic discipline] (*<-lang_en;;*);
+          [академическая дисциплина] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (academic discipline)] (*<-lang_en;;*);       
+      [Опр. (академическая дисциплина)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [academic field of study or profession] (*<-lang_en;;*);       
+      [отрасль науки для классифицирования профессий] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Metropolitan_Museum_of_Art_Tagging_Vocabulary
+=> nrel_main_idtf:
+          [Metropolitan Museum of Art Tagging Vocabulary] (*<-lang_en;;*);
+          [Словарь тегов Метрополитен-музея] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Metropolitan Museum of Art Tagging Vocabulary)] (*<-lang_en;;*);       
+      [Опр. (Словарь тегов Метрополитен-музея)] (*<-lang_ru;;*);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_Gender_Glossar
+=> nrel_main_idtf:
+          [Gender Glossar] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Gender Glossar)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [German online encyclopedia of gender] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_game_based_sport
+=> nrel_main_idtf:
+          [игровой спорт] (*<-lang_ru;;*);
+          [game-based sport] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (игровой спорт)] (*<-lang_ru;;*);       
+      [Def. (game-based sport)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [виды спорта, связанные с противоборством команд или участников] (*<-lang_ru;;*);       
+      [game competitions which are based on various technical and tactical tricks to hit a certain target (opponent&#39;s gate, field, etc.) during the competition with various sports items (usually a ball)] (*<-lang_en;;*);;
+    *);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+concept_sport_games_physical_exercises
+=> nrel_main_idtf:
+          [sport, games, physical exercises] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (sport, games, physical exercises)] (*<-lang_en;;*);;
+*);
+
+
+<- sc_node_class;
+<- class;
+<- sc_node_not_relation;;
+
+nrel_part_of
+=> nrel_main_idtf:
+          [part of] (*<-lang_en;;*);
+          [часть от] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (part of)] (*<-lang_en;;*);       
+      [Опр. (часть от)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [object of which the subject is a part (if this subject is already part of object A which is a part of object B, then please only make the subject part of object A). Inverse property of &quot;has part&quot; (P527, see also &quot;has parts of the class&quot; (P2670)).] (*<-lang_en;;*);       
+      [объект, частью которого является субъект (бесполезно связывать объекты, которые сами являются частями других объектов, уже перечисленных как части объекта). Обратное свойство «состоит из» (P527, см. Также «состоит из представителей класса» (P2670)).] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_alien;
+=> nrel_second_domain:
+  concept_society;
+=> nrel_second_domain:
+  concept_biosphere;
+=> nrel_second_domain:
+  concept_sport_games_physical_exercises;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_topics_main_template
+=> nrel_main_idtf:
+          [topic&#39;s main template] (*<-lang_en;;*);
+          [основной шаблон по теме] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (topic&#39;s main template)] (*<-lang_en;;*);       
+      [Опр. (основной шаблон по теме)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [the main template relating to a topic] (*<-lang_en;;*);       
+      [карточка или навигационный] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_Template_Infobox_person;
+=> nrel_second_domain:
+  concept_Template_Infobox_Biography2;
+=> nrel_second_domain:
+  concept_Template_Infobox_person_Wikidata;
+=> nrel_second_domain:
+  concept_Template_Infobox_sport_overview;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_topics_main_category
+=> nrel_main_idtf:
+          [topic&#39;s main category] (*<-lang_en;;*);
+          [основная категория по теме] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (topic&#39;s main category)] (*<-lang_en;;*);       
+      [Опр. (основная категория по теме)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [main Wikimedia category] (*<-lang_en;;*);       
+      [категория Викимедиа, соответствующая данной теме] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_Category_Humans;
+=> nrel_second_domain:
+  concept_Category_Sports;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_described_by_source
+=> nrel_main_idtf:
+          [described by source] (*<-lang_en;;*);
+          [описывается в источниках] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (described by source)] (*<-lang_en;;*);       
+      [Опр. (описывается в источниках)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [авторитетные источники (словари и энциклопедии), описывающие элемент целиком] (*<-lang_ru;;*);       
+      [work where this item is described] (*<-lang_en;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_Jewish_Encyclopedia_of_Brockhaus_and_Efron;
+=> nrel_second_domain:
+  concept_Bible_Encyclopedia_of_Archimandrite_Nicephorus;
+=> nrel_second_domain:
+  concept_Granat_Encyclopedic_Dictionary;
+=> nrel_second_domain:
+  concept_Catholic_Encyclopedia;
+=> nrel_second_domain:
+  concept_Brockhaus_and_Efron_Encyclopedic_Dictionary;
+=> nrel_second_domain:
+  concept_Small_Brockhaus_and_Efron_Encyclopedic_Dictionary;
+=> nrel_second_domain:
+  concept_Metropolitan_Museum_of_Art_Tagging_Vocabulary;
+=> nrel_second_domain:
+  concept_Gender_Glossar;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_permanent_duplicated_item
+=> nrel_main_idtf:
+          [permanent duplicated item] (*<-lang_en;;*);
+          [постоянный дубликат] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (permanent duplicated item)] (*<-lang_en;;*);       
+      [Опр. (постоянный дубликат)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [this item duplicates another item and the two can&#39;t be merged, as one Wikimedia project includes two pages, e.g. in different scripts or languages (only applies to some wikis, e.g.: cdowiki, gomwiki, nanwiki).  Use P31=Q17362920 for other wikis.] (*<-lang_en;;*);       
+      [обычно для связи двух статей в одном проекте Викимедиа об одном и том же (но на другом диалекте или в другом алфавите)] (*<-lang_ru;;*);;
+    *);;
+*);
+
+
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_studied_by
+=> nrel_main_idtf:
+          [studied by] (*<-lang_en;;*);
+          [изучается в] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (studied by)] (*<-lang_en;;*);       
+      [Опр. (изучается в)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [subject is studied by this science or domain] (*<-lang_en;;*);       
+      [какой наукой или дисциплиной изучается или исследуется предмет] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+
+=> nrel_second_domain:
+  concept_anthropology;
+=> nrel_second_domain:
+  concept_human_ecology;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_uses
+=> nrel_main_idtf:
+          [uses] (*<-lang_en;;*);
+          [использует] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (uses)] (*<-lang_en;;*);       
+      [Опр. (использует)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [item or concept used by the subject or in the operation (see also instrument P1303 and armament P520)] (*<-lang_en;;*);       
+      [что: используемые предметы или принципы] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_artificial_physical_object;
+=> nrel_second_domain:
+  concept_tool;
+=> nrel_second_domain:
+  concept_language;
+=> nrel_second_domain:
+  concept_sports_equipment;
+=> nrel_second_domain:
+  concept_pitch;
+=> nrel_second_domain:
+  concept_sports_field;
+=> nrel_second_domain:
+  concept_sports_venue;
+=> nrel_second_domain:
+  concept_sports_location;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_said_to_be_the_same_as
+=> nrel_main_idtf:
+          [said to be the same as] (*<-lang_en;;*);
+          [предположительно одно и то же с] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (said to be the same as)] (*<-lang_en;;*);       
+      [Опр. (предположительно одно и то же с)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [this item is said to be the same as that item, but it&#39;s uncertain or disputed] (*<-lang_en;;*);       
+      [есть мнение, что этот элемент — то же самое, что и тот элемент, но это утверждение оспаривается] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_Homo_sapiens;
+=> nrel_second_domain:
+  concept_Adam;
+=> nrel_second_domain:
+  concept_game_based_sport;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_produced_sound
+=> nrel_main_idtf:
+          [produced sound] (*<-lang_en;;*);
+          [производит звук] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (produced sound)] (*<-lang_en;;*);       
+      [Опр. (производит звук)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [item for the sound generated by the subject, for instance the cry of an animal] (*<-lang_en;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+
+=> nrel_second_domain:
+  concept_voice;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_on_focus_list_of_Wikimedia_project
+=> nrel_main_idtf:
+          [on focus list of Wikimedia project] (*<-lang_en;;*);
+          [рабочий список проекта Викимедиа] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (on focus list of Wikimedia project)] (*<-lang_en;;*);       
+      [Опр. (рабочий список проекта Викимедиа)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [property to indicate that an item is of particular interest for a Wikimedia project. This property does not add notability. Items should not be created with this property if they are not notable for Wikidata. See also P6104, P972, P2354.] (*<-lang_en;;*);       
+      [свойство, указывающее на то, что элемент является частью группы элементов, представляющих особый интерес для обслуживания, управлений или разработки. См. также P6104, P972, P2354.] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_Wikipedia_List_of_articles_all_languages_should_have;
+=> nrel_second_domain:
+  concept_Wikipedia_Vital_articles_Level_4;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_different_from
+=> nrel_main_idtf:
+          [different from] (*<-lang_en;;*);
+          [не путать с] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (different from)] (*<-lang_en;;*);       
+      [Опр. (не путать с)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [item that is different from another item, with which it may be confused] (*<-lang_en;;*);       
+      [ссылка на элемент с другим смыслом, но который часто путается с этим] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_people;
+=> nrel_second_domain:
+  concept_fictional_character;
+=> nrel_second_domain:
+  concept_person;
+=> nrel_second_domain:
+  concept_Human;
+=> nrel_second_domain:
+  concept_sports_discipline;
+=> nrel_second_domain:
+  concept_type_of_sport;
+=> nrel_second_domain:
+  concept_sports_competition;
+=> nrel_second_domain:
+  concept_physical_preparedness;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_model_item
+=> nrel_main_idtf:
+          [model item] (*<-lang_en;;*);
+          [модельный элемент] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (model item)] (*<-lang_en;;*);       
+      [Опр. (модельный элемент)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [defines which item is a best practice example of modelling a subject, which is described by the value of this property, usage instructions at Wikidata:Model items] (*<-lang_en;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+
+=> nrel_second_domain:
+  concept_human;
+=> nrel_second_domain:
+  concept_human;
+=> nrel_second_domain:
+  concept_human;
+=> nrel_second_domain:
+  concept_human;
+=> nrel_second_domain:
+  concept_human;
+=> nrel_second_domain:
+  concept_human;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_subclass_of
+=> nrel_main_idtf:
+          [subclass of] (*<-lang_en;;*);
+          [подкласс от] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (subclass of)] (*<-lang_en;;*);       
+      [Опр. (подкласс от)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [this item is a subclass (subset) of that item; all instances of this item are instances of that item; different from P31 (instance of), e.g.: K2 is an instance of mountain; volcano is a subclass of mountain (and an instance of volcanic landform).] (*<-lang_en;;*);       
+      [каждый экземпляр данного класса является также экземпляром следующего(-их) класса(-ов). Не путать с P31 (&quot;это частный случай понятия&quot;)] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_natural_person;
+=> nrel_second_domain:
+  concept_omnivore;
+=> nrel_second_domain:
+  concept_mammal;
+=> nrel_second_domain:
+  concept_person;
+=> nrel_second_domain:
+  concept_physical_activity;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_instance_of
+=> nrel_main_idtf:
+          [instance of] (*<-lang_en;;*);
+          [это частный случай понятия] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (instance of)] (*<-lang_en;;*);       
+      [Опр. (это частный случай понятия)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [that class of which this subject is a particular example and member; different from P279 (subclass of); for example: K2 is an instance of mountain; volcano is a subclass of mountain (and an instance of volcanic landform)] (*<-lang_en;;*);       
+      [данный элемент представляет собой конкретный объект (экземпляр / частный случай) класса, категории. Не путать с Property:P279 (&quot;подкласс от&quot;).] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_organisms_known_by_a_particular_common_name;
+=> nrel_second_domain:
+  concept_academic_discipline;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_has_effect
+=> nrel_main_idtf:
+          [has effect] (*<-lang_en;;*);
+          [вызывает] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (has effect)] (*<-lang_en;;*);       
+      [Опр. (вызывает)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [effect of this item] (*<-lang_en;;*);       
+      [является причиной (вызванного последствия)] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+
+=> nrel_second_domain:
+  concept_artificial_entity;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_physically_interacts_with
+=> nrel_main_idtf:
+          [physically interacts with] (*<-lang_en;;*);
+          [взаимодействует с] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (physically interacts with)] (*<-lang_en;;*);       
+      [Опр. (взаимодействует с)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [physical entity that the subject interacts with] (*<-lang_en;;*);       
+      [физический объект, с которым есть взаимодействие] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+
+=> nrel_second_domain:
+  concept_natural_environment;
+=> nrel_second_domain:
+  concept_human_food;
+=> nrel_second_domain:
+  concept_Earth;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_participant_in
+=> nrel_main_idtf:
+          [participant in] (*<-lang_en;;*);
+          [участвовал(а) в] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (participant in)] (*<-lang_en;;*);       
+      [Опр. (участвовал(а) в)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [мероприятие, в котором участвовала персона или организация, противоположно P710 и P1923] (*<-lang_ru;;*);       
+      [event in which a person or organization was/is a participant; inverse of P710 or P1923] (*<-lang_en;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+
+=> nrel_second_domain:
+  concept_human_activity;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_history_of_topic
+=> nrel_main_idtf:
+          [history of topic] (*<-lang_en;;*);
+          [история темы] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (history of topic)] (*<-lang_en;;*);       
+      [Опр. (история темы)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [item about the historical development of an subject&#39;s topic, sample: &quot;history of Argentina&quot; for &quot;Argentina&quot;. To list key events of the topic, use &quot;significant event&quot; (P793)] (*<-lang_en;;*);       
+      [элемент, в котором описана история объекта] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_human;
+
+=> nrel_second_domain:
+  concept_human_history;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_topics_main_Wikimedia_portal
+=> nrel_main_idtf:
+          [topic&#39;s main Wikimedia portal] (*<-lang_en;;*);
+          [портал Викимедиа] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (topic&#39;s main Wikimedia portal)] (*<-lang_en;;*);       
+      [Опр. (портал Викимедиа)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [Wikimedia portal associated with this topic] (*<-lang_en;;*);       
+      [портал Викимедии, связанный с данной темой] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_Portal_Sports;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_practiced_by
+=> nrel_main_idtf:
+          [practiced by] (*<-lang_en;;*);
+          [практикуется] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (practiced by)] (*<-lang_en;;*);       
+      [Опр. (практикуется)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [type of agents that study this subject or work in this profession] (*<-lang_en;;*);       
+      [кем] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_athlete;
+=> nrel_second_domain:
+  concept_sportsperson;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_has_use
+=> nrel_main_idtf:
+          [has use] (*<-lang_en;;*);
+          [используется как/для/в] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (has use)] (*<-lang_en;;*);       
+      [Опр. (используется как/для/в)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [main use of the subject (includes current and former usage)] (*<-lang_en;;*);       
+      [основное назначение объекта (включая текущее и прошлое использование)] (*<-lang_ru;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_physical_fitness;
+=> nrel_second_domain:
+  concept_pleasure;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_Wikimedia_outline
+=> nrel_main_idtf:
+          [Wikimedia outline] (*<-lang_en;;*);
+          [обзорная статья Викимедиа] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Wikimedia outline)] (*<-lang_en;;*);       
+      [Опр. (обзорная статья Викимедиа)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [item about an outline of the topic at Wikimedia sites] (*<-lang_en;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_outline_of_sports;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_maintained_by_WikiProject
+=> nrel_main_idtf:
+          [maintained by WikiProject] (*<-lang_en;;*);
+          [относится к вики-проекту] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (maintained by WikiProject)] (*<-lang_en;;*);       
+      [Опр. (относится к вики-проекту)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+      [WikiProject that maintains this property, item, or linked pages. If the WikiProject is hosted outside of Wikidata, define the scope using the qualifier &quot;of (P642)&quot;] (*<-lang_en;;*);;
+    *);;
+*);
+
+=> nrel_first_domain:
+  concept_sport;
+
+=> nrel_second_domain:
+  concept_WikiProject_Sports;
+
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;;
+
+Douglas_Adams
+=> nrel_main_idtf:
+          [Douglas Adams] (*<-lang_en;;*);
+          [Дуглас Адамс] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Douglas Adams)] (*<-lang_en;;*);       
+      [Опр. (Дуглас Адамс)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+        [English science fiction writer and humourist] (*<-lang_en;;*);       
+        [английский писатель, драматург и сценарист, автор серии книг «Автостопом по галактике»] (*<-lang_ru;;*);;
+    *);;
+*);
+
+<- sc_node_not_relation;;
+
+Marie_Curie
+=> nrel_main_idtf:
+          [Marie Curie] (*<-lang_en;;*);
+          [Мария Склодовская-Кюри] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Marie Curie)] (*<-lang_en;;*);       
+      [Опр. (Мария Склодовская-Кюри)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+        [Polish physicist and chemist nationalized French (1867–1934)] (*<-lang_en;;*);       
+        [франко-польский физик и химик (1867—1934)] (*<-lang_ru;;*);;
+    *);;
+*);
+
+<- sc_node_not_relation;;
+
+Leonardo_da_Vinci
+=> nrel_main_idtf:
+          [Леонардо да Винчи] (*<-lang_ru;;*);
+          [Leonardo da Vinci] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (Леонардо да Винчи)] (*<-lang_ru;;*);       
+      [Def. (Leonardo da Vinci)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+        [Italian Renaissance polymath (1452-1519)] (*<-lang_en;;*);       
+        [итальянский художник, учёный, изобретатель, писатель, один из крупнейших представителей искусства Высокого Возрождения] (*<-lang_ru;;*);;
+    *);;
+*);
+
+<- sc_node_not_relation;;
+
+Joan_of_Arc
+=> nrel_main_idtf:
+          [Joan of Arc] (*<-lang_en;;*);
+          [Жанна д’Арк] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Joan of Arc)] (*<-lang_en;;*);       
+      [Опр. (Жанна д’Арк)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+        [French folk heroine and Roman Catholic saint (1412-1431)] (*<-lang_en;;*);       
+        [национальная героиня Франции] (*<-lang_ru;;*);;
+    *);;
+*);
+
+<- sc_node_not_relation;;
+
+Sun_Tzu
+=> nrel_main_idtf:
+          [Сунь-цзы] (*<-lang_ru;;*);
+          [Sun Tzu] (*<-lang_en;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Опр. (Сунь-цзы)] (*<-lang_ru;;*);       
+      [Def. (Sun Tzu)] (*<-lang_en;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+        [6th century BC Chinese general and military strategist] (*<-lang_en;;*);       
+        [древнекитайский стратег и мыслитель] (*<-lang_ru;;*);;
+    *);;
+*);
+
+<- sc_node_not_relation;;
+
+Carl_Linnaeus
+=> nrel_main_idtf:
+          [Carl Linnaeus] (*<-lang_en;;*);
+          [Карл Линней] (*<-lang_ru;;*);
+    
+<- rrel_key_sc_element: ... (*
+  <- definition;;
+    => nrel_main_idtf:       
+      [Def. (Carl Linnaeus)] (*<-lang_en;;*);       
+      [Опр. (Карл Линней)] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:       
+        [Swedish botanist, physician, and zoologist (1707–1778)] (*<-lang_en;;*);       
+        [шведский естествоиспытатель (медик, ботаник, зоолог)] (*<-lang_ru;;*);;
+    *);;
+*);
+
+<- sc_node_not_relation;;
