@@ -45,21 +45,3 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
-
-  gh-release:
-    needs: npm-publish
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v3
-      - name: read changelog
-        id: changelogReader
-        uses: mindsers/changelog-reader-action@v2
-        with:
-          version: ${{ github.ref_name }}
-          path: docs/changelog.md
-
-      - name: release
-        uses: softprops/action-gh-release@v1
-        with:
-          body: ${{ steps.changelogReader.outputs.changes }}
-          name: '${{ github.ref_name }}'
