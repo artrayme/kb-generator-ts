@@ -9,11 +9,9 @@
     // Use ESM
     "module": "NodeNext",
     "moduleResolution": "nodenext",
-
     // We handle these with ESLint:
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-
     // DX
     "sourceMap": true,
     "declaration": true,
@@ -21,8 +19,18 @@
     "incremental": true,
     "tsBuildInfoFile": "node_modules/.cache/.tsbuildinfo",
     "noErrorTruncation": true,
-    "allowJs": true
+    "allowJs": true,
+    "skipLibCheck": true
   },
-  "include": ["src", "tests", "scripts"],
-  "exclude": ["build"]
+  "include": [
+    "src",
+    "tests",
+    "scripts"
+  ],
+  "exclude": [
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*",
+    "./node_modules/@types/node/index.d.ts",
+  ]
 }

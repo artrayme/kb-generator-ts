@@ -41,11 +41,14 @@ const removeIfArray = <elementT>(arr: elementT[], condition: (key: elementT) => 
 const mergeMaps = <keyT, valueT>(sourceMap: Map<keyT, valueT[]>, targetMap: Map<keyT, valueT[]>) => {
   sourceMap.forEach((v, k) => {
     if (targetMap.has(k)) {
+      // @ts-ignore
       sourceMap.get(k).forEach(e => {
+        // @ts-ignore
         targetMap.get(k).push(e);
       });
     } else {
       const temp: valueT[] = [];
+      // @ts-ignore
       sourceMap.get(k).forEach(e => {
         temp.push(e);
       });

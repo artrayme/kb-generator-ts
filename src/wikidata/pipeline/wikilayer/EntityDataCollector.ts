@@ -55,7 +55,9 @@ export class EntityDataCollector implements WikiPipelineComponent {
     const documents = new Map<WikiID, Item | Property>();
     return await axios.get(url)
       .then((response: AxiosResponse<WbGetEntitiesResponse>) => {
+        // @ts-ignore
         for (const key in response.data.entities) {
+          // @ts-ignore
           documents.set(<`Q${number}` | `P${number}`>key, response.data.entities[key]);
         }
         for (const [key, value] of documents) {

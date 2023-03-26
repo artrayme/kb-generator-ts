@@ -2,10 +2,16 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "build/cjs",
-    "module": "commonjs",
+    "module": "ES2020",
     "moduleResolution": "node",
-    "rootDir": "src"
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "types": []
   },
   "include": ["src"],
-  "exclude": ["**/*.spec.*"]
+  "exclude": [
+    "node_modules",
+    "./node_modules/*",
+    "**/*.spec.*"
+  ]
 }

@@ -75,7 +75,9 @@ export class BatchEntityCollector implements WikiPipelineComponent {
     });
     await axios.get(url)
       .then((response: AxiosResponse<WbGetEntitiesResponse>) => {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
         for (const key in response.data.entities) {
+          // @ts-ignore
           this.pulledEntityCache.set(<`Q${number}` | `P${number}`>key, response.data.entities[key]);
         }
       });
@@ -129,7 +131,9 @@ export class BatchEntityCollector implements WikiPipelineComponent {
     let result: Item | undefined = undefined;
     await axios.get(url)
       .then((response: AxiosResponse<WbGetEntitiesResponse>) => {
+        // @ts-ignore
         this.pulledEntityCache.set(id, response.data.entities[id]);
+        // @ts-ignore
         result = response.data.entities[id];
       });
 
@@ -158,6 +162,7 @@ export class BatchEntityCollector implements WikiPipelineComponent {
     for (const claim in claims) {
       // @ts-ignore
       result.set(<`Q${number}` | `P${number}`>claim, claims[claim]
+        // @ts-ignore
         .map((e: PropertyClaims) => e.mainsnak)
         .map((e: Snak) => e.datavalue)
         .map((e: SnakValue) => e?.value)
