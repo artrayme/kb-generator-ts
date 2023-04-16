@@ -1,5 +1,4 @@
-import type { WikiID } from "./contanerTypes.js";
-import type { WmLanguageCode } from "wikibase-sdk";
+import type { WikiID, WmLanguageCode } from "./contanerTypes.js";
 
 class WikiDataEntity {
   public constructor(private readonly _wikiId: WikiID,

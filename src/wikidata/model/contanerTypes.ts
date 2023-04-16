@@ -1,6 +1,5 @@
-import type { ItemId, PropertyId } from "wikibase-sdk";
-
-type WikiID = ItemId | PropertyId;
+type WikiID = string;
+type WmLanguageCode = string;
 type OstisID = string;
 type WikiTriplet = {
   node1: WikiID;
@@ -11,5 +10,6 @@ type WikiTriplet = {
 export type {
   OstisID,
   WikiID,
-  WikiTriplet
+  WikiTriplet,
+  WmLanguageCode
 };

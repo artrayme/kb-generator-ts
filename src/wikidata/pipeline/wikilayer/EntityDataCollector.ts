@@ -1,17 +1,16 @@
-import type { WikiID } from "../../model/contanerTypes.js";
+import type { WikiID, WmLanguageCode } from "../../model/contanerTypes.js";
 import { WikiDataContainer } from "../../model/WikiDataContainer.js";
 import { WikiDataEntity } from "../../model/WikiDataEntity.js";
 import type { WikiPipelineComponent } from "../WikiPipelineComponent.js";
 import type { AxiosResponse } from "axios";
 import axios from "axios";
-import type { Item, Property, Wbk, WmLanguageCode } from "wikibase-sdk";
 // @ts-ignore
 import type { WbGetEntitiesResponse } from "wikibase-sdk/dist/helpers/parse_responses";
 
 export class EntityDataCollector implements WikiPipelineComponent {
 
   constructor(private readonly wikiProcessorPipeline: WikiPipelineComponent,
-              private readonly wbk: Wbk,
+              private readonly wbk: any,
               private readonly requiredLanguages: WmLanguageCode[]) {
   }
 
@@ -52,7 +51,7 @@ export class EntityDataCollector implements WikiPipelineComponent {
       props: [`labels`, `descriptions`, `info`]
     });
 
-    const documents = new Map<WikiID, Item | Property>();
+    const documents = new Map<WikiID, any>();
     return await axios.get(url)
       .then((response: AxiosResponse<WbGetEntitiesResponse>) => {
         // @ts-ignore

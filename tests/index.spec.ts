@@ -1,5 +1,5 @@
 import { renderConcepts, renderInstances, renderRelations } from "../src/scs-templates/ScsTemplateEngine.js";
-import type { WikiID } from "../src/wikidata/model/contanerTypes.js";
+import type { WikiID, WmLanguageCode } from "../src/wikidata/model/contanerTypes.js";
 import {
   ClearIllegalCharactersFromDescription
 } from "../src/wikidata/pipeline/ostislayer/ClearIllegalCharactersFromDescription.js";
@@ -17,7 +17,6 @@ import {
 import { EntityDataCollector } from "../src/wikidata/pipeline/wikilayer/EntityDataCollector.js";
 import { InstancesFromConcepts } from "../src/wikidata/pipeline/wikilayer/InstancesFromConcepts.js";
 import { test } from "vitest";
-import type { WmLanguageCode } from "wikibase-sdk";
 const  WBK =  require("wikibase-sdk");
 
 test(`example full chain`, async () => {
