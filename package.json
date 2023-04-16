@@ -1,6 +1,6 @@
 {
   "name": "kb-generator-ts",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "repository": "git+https://github.com/artrayme/kb-generator-ts.git",
   "author": "artrayme",
   "packageManager": "npm@8.19.2",
@@ -14,15 +14,16 @@
   "main": "./build/cjs/index.js",
   "exports": {
     ".": {
-      "require": {
-        "types": "./build/cjs/index.d.ts",
+      "types": {
+        "require": "./build/cjs/index.d.ts",
         "default": "./build/cjs/index.js"
       },
-      "import": {
-        "types": "./build/esm/index.d.ts",
-        "default": "./build/esm/index.js"
+      "default": {
+        "require": "./build/cjs/index.d.ts",
+        "default": "./build/cjs/index.js"
       }
-    }
+    },
+    "./package.json": "./package.json"
   },
   "scripts": {
     "build:toc": "markdown-toc README.md -i --maxdepth 4 && prettier --write README.md",
