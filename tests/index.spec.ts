@@ -18,7 +18,7 @@ import { EntityDataCollector } from "../src/wikidata/pipeline/wikilayer/EntityDa
 import { InstancesFromConcepts } from "../src/wikidata/pipeline/wikilayer/InstancesFromConcepts.js";
 import { test } from "vitest";
 import type { WmLanguageCode } from "wikibase-sdk";
-import { WBK } from "wikibase-sdk";
+const  WBK =  require("wikibase-sdk");
 
 test(`example full chain`, async () => {
   const wdk = WBK({
@@ -88,6 +88,8 @@ test(`example full chain`, async () => {
   renders3.forEach((v) => {
     result += v;
   });
+
+  console.log(result)
 
   // const x = new BatchEntityCollector([`en`, `ru`], wdk, new Map([[`Sport`, `en`]]), [`P13`]);
 }, 600000);
