@@ -10,7 +10,8 @@
     "src",
     "build"
   ],
-  "types": "./build/esm/index.d.ts",
+  "types": "./build/cjs/index.d.ts",
+  "main": "./build/cjs/index.js",
   "exports": {
     ".": {
       "require": {
