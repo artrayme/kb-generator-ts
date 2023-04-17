@@ -1,6 +1,6 @@
 {
   "name": "kb-generator-ts",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "repository": "git+https://github.com/artrayme/kb-generator-ts.git",
   "author": "artrayme",
   "packageManager": "npm@8.19.2",
@@ -9,8 +9,8 @@
   "files": [
     "build"
   ],
-  "types": "./build/lib",
-  "main": "./build/kb-generator.js",
+  "types": "build/lib",
+  "main": "build/kb-generator.js",
   "scripts": {
     "build:toc": "markdown-toc README.md -i --maxdepth 4 && prettier --write README.md",
     "format": "prettier --write .",
