@@ -1,7 +1,7 @@
-import { groupBy } from "../../model/collectionUtils.js";
-import type { OstisID, WikiID } from "../../model/contanerTypes.js";
-import type { WikiDataContainer } from "../../model/WikiDataContainer.js";
-import type { WikiPipelineComponent } from "../WikiPipelineComponent.js";
+import { groupBy } from "../../model/collectionUtils";
+import type { OstisID, WikiID } from "../../model/contanerTypes";
+import type { WikiDataContainer } from "../../model/WikiDataContainer";
+import type { WikiPipelineComponent } from "../WikiPipelineComponent";
 
 // This class is looking for entities with the same ostis id
 // And then leaves only the item with the minimal wiki id

@@ -1,6 +1,6 @@
-import type { WikiID } from "../../model/contanerTypes.js";
-import type { WikiDataContainer } from "../../model/WikiDataContainer.js";
-import type { WikiPipelineComponent } from "../WikiPipelineComponent.js";
+import type { WikiID } from "../../model/contanerTypes";
+import type { WikiDataContainer } from "../../model/WikiDataContainer";
+import type { WikiPipelineComponent } from "../WikiPipelineComponent";
 
 export class DeleteEntitiesWithoutLabels implements WikiPipelineComponent {
   constructor(private readonly wikiProcessorPipeline: WikiPipelineComponent) {}

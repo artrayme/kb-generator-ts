@@ -1,7 +1,7 @@
-import type { WikiID, WmLanguageCode } from "../../model/contanerTypes.js";
-import { WikiDataContainer } from "../../model/WikiDataContainer.js";
-import { WikiDataEntity } from "../../model/WikiDataEntity.js";
-import type { WikiPipelineComponent } from "../WikiPipelineComponent.js";
+import type { WikiID, WmLanguageCode } from "../../model/contanerTypes";
+import { WikiDataContainer } from "../../model/WikiDataContainer";
+import { WikiDataEntity } from "../../model/WikiDataEntity";
+import type { WikiPipelineComponent } from "../WikiPipelineComponent";
 import type { AxiosResponse } from "axios";
 import axios from "axios";
 // @ts-ignore

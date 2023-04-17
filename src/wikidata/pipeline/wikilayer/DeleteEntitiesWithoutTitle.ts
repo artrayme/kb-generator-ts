@@ -1,6 +1,6 @@
-import type { WikiID } from "../../model/contanerTypes.js";
-import type { WikiDataContainer } from "../../model/WikiDataContainer.js";
-import type { WikiPipelineComponent } from "../WikiPipelineComponent.js";
+import type { WikiID } from "../../model/contanerTypes";
+import type { WikiDataContainer } from "../../model/WikiDataContainer";
+import type { WikiPipelineComponent } from "../WikiPipelineComponent";
 
 // Temporary solution, but very useful for current implementation
 // What problem does this class solve? We can create inner Ostis idtfs only using english text,

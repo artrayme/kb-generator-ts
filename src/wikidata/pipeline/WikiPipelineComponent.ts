@@ -1,4 +1,4 @@
-import type { WikiDataContainer } from "../model/WikiDataContainer.js";
+import type { WikiDataContainer } from "../model/WikiDataContainer";
 
 export interface WikiPipelineComponent {
   execute: () => Promise<WikiDataContainer>;

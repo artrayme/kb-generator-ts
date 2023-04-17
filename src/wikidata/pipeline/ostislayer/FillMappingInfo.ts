@@ -1,6 +1,6 @@
-import { replaceAll } from "../../model/collectionUtils.js";
-import type { WikiDataContainer } from "../../model/WikiDataContainer.js";
-import type { WikiPipelineComponent } from "../WikiPipelineComponent.js";
+import { replaceAll } from "../../model/collectionUtils";
+import type { WikiDataContainer } from "../../model/WikiDataContainer";
+import type { WikiPipelineComponent } from "../WikiPipelineComponent";
 
 export class FillMappingInfo implements WikiPipelineComponent {
   constructor(private readonly wikiProcessorPipeline: WikiPipelineComponent) {}

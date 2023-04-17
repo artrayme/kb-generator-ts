@@ -1,15 +1,19 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "build/cjs",
-    "module": "commonjs",
+    "outDir": "build/lib/",
+    "module": "ES6",
+    "target": "ES5",
+    "lib": ["ES2015", "DOM"],
     "moduleResolution": "node",
     "rootDir": "src",
     "skipLibCheck": true,
     "types": [],
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "declaration": true
   },
-  "include": ["src"],
+  "include": ["src/**/*.ts"],
   "exclude": [
     "node_modules",
     "./node_modules/*",

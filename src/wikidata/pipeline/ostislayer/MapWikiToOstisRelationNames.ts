@@ -1,7 +1,7 @@
-import { removeIfMap, replaceAll } from "../../model/collectionUtils.js";
-import type { OstisID, WikiID } from "../../model/contanerTypes.js";
-import type { WikiDataContainer } from "../../model/WikiDataContainer.js";
-import type { WikiPipelineComponent } from "../WikiPipelineComponent.js";
+import { removeIfMap, replaceAll } from "../../model/collectionUtils";
+import type { OstisID, WikiID } from "../../model/contanerTypes";
+import type { WikiDataContainer } from "../../model/WikiDataContainer";
+import type { WikiPipelineComponent } from "../WikiPipelineComponent";
 
 export class MapWikiToOstisRelationNames implements WikiPipelineComponent {
   constructor(private readonly wikiProcessorPipeline: WikiPipelineComponent,

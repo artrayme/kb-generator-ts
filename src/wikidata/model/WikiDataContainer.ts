@@ -1,6 +1,6 @@
-import { copySet, removeIfArray, removeIfMap, removeIfSet } from "./collectionUtils.js";
-import type { OstisID, WikiID, WikiTriplet } from "./contanerTypes.js";
-import type { WikiDataEntity } from "./WikiDataEntity.js";
+import { copySet, removeIfArray, removeIfMap, removeIfSet } from "./collectionUtils";
+import type { OstisID, WikiID, WikiTriplet } from "./contanerTypes";
+import type { WikiDataEntity } from "./WikiDataEntity";
 
 export class WikiDataContainer {
 

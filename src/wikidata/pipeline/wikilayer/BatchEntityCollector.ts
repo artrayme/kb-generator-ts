@@ -1,7 +1,7 @@
-import { mergeMaps, removeIfMap } from "../../model/collectionUtils.js";
-import type { WikiID, WikiTriplet, WmLanguageCode } from "../../model/contanerTypes.js";
-import { WikiDataContainer } from "../../model/WikiDataContainer.js";
-import type { WikiPipelineComponent } from "../WikiPipelineComponent.js";
+import { mergeMaps, removeIfMap } from "../../model/collectionUtils";
+import type { WikiID, WikiTriplet, WmLanguageCode } from "../../model/contanerTypes";
+import { WikiDataContainer } from "../../model/WikiDataContainer";
+import type { WikiPipelineComponent } from "../WikiPipelineComponent";
 import type { AxiosResponse } from "axios";
 import axios from "axios";
 
