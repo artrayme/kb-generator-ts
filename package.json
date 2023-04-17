@@ -1,6 +1,6 @@
 {
   "name": "kb-generator-ts",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "repository": "git+https://github.com/artrayme/kb-generator-ts.git",
   "author": "artrayme",
   "packageManager": "npm@8.19.2",
@@ -12,7 +12,7 @@
   "exports": {
     "types": "./build/lib",
     "browser": "./build/kb-generator.js",
-    "default": "./build/index.js"
+    "default": "./build/lib/index.js"
   },
   "types": "build/lib",
   "main": "build/lib/index.js",
