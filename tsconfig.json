@@ -1,21 +1,19 @@
 {
+  "version": "1.6.2",
   "compilerOptions": {
-    "target": "ES2021",
+    "module": "esnext",
+    "target": "es2021",
+    "lib": ["es2021", "dom"],
     "strict": true,
-    "module": "commonjs",
     "sourceMap": true,
     "outDir": "build/lib/",
-    "declaration": true
+    "declaration": true,
+    "moduleResolution": "Node"
   },
-  "include": [
-    "src",
-    "tests",
-    "scripts"
-  ],
   "exclude": [
-    "node_modules",
-    "./node_modules",
-    "./node_modules/*",
-    "./node_modules/@types/node/index.d.ts"
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*.ts"
   ]
 }
