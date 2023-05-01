@@ -17,6 +17,7 @@ import {
 import { EntityDataCollector } from "../src/wikidata/pipeline/wikilayer/EntityDataCollector.js";
 import { InstancesFromConcepts } from "../src/wikidata/pipeline/wikilayer/InstancesFromConcepts.js";
 import { test } from "vitest";
+import { PipelineInit } from "../src/wikidata/pipeline/PipelineInit";
 const  WBK =  require("wikibase-sdk");
 
 test(`example full chain`, async () => {
@@ -26,6 +27,7 @@ test(`example full chain`, async () => {
   });
   const languages: WmLanguageCode[] = [`en`, `ru`];
   const mainCollector = new BatchEntityCollector(
+    new PipelineInit(),
     languages,
     wdk,
     new Map([[`human`, `en`], [`Sport`, `en`]]),
