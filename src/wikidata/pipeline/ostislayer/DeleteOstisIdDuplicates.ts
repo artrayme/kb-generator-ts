@@ -1,7 +1,7 @@
 import { groupBy } from "../../model/collectionUtils";
-import type { OstisID, WikiID } from "../../model/contanerTypes";
+import type { OstisID, SemanticID } from "../../model/contanerTypes";
 import type { WikiDataContainer } from "../../model/WikiDataContainer";
-import type { WikiPipelineComponent } from "../WikiPipelineComponent";
+import type { WikiPipelineComponent } from "../../WikiPipelineComponent";
 
 // This class is looking for entities with the same ostis id
 // And then leaves only the item with the minimal wiki id
@@ -18,19 +18,19 @@ export class DeleteOstisIdDuplicates implements WikiPipelineComponent {
     const toRemoveProperties = this.getBadDuplicates(container.propertiesWikiToOstisMap);
     const toRemoveInstances = this.getBadDuplicates(container.instancesWikiToOstisMap);
 
-    const toDelete: Set<WikiID> = new Set<WikiID>(toRemoveConcepts.concat(toRemoveProperties, toRemoveInstances));
+    const toDelete: Set<SemanticID> = new Set<SemanticID>(toRemoveConcepts.concat(toRemoveProperties, toRemoveInstances));
     container.deleteByWikiIds(toDelete);
     return container;
   }
 
-  getBadDuplicates(wikiToOstisMap: Map<WikiID, OstisID>): WikiID[] {
+  getBadDuplicates(wikiToOstisMap: Map<SemanticID, OstisID>): SemanticID[] {
     // group by ostis ids
     const grouped = groupBy(Array.of(...wikiToOstisMap.entries()), e => e[1]);
 
     // and analyze groups
     // leave only entity with minimal wiki id
     // add other entities into the array for deletion
-    const toDelete: WikiID[] = [];
+    const toDelete: SemanticID[] = [];
     for (const ostisId in grouped) {
       // @ts-ignore
       if (grouped[ostisId].length > 1) {

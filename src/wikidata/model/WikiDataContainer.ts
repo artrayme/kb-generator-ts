@@ -1,18 +1,18 @@
 import { copySet, removeIfArray, removeIfMap, removeIfSet } from "./collectionUtils";
-import type { OstisID, WikiID, WikiTriplet } from "./contanerTypes";
+import type { OstisID, SemanticID, SemanticTriplet } from "./contanerTypes";
 import type { WikiDataEntity } from "./WikiDataEntity";
 
 export class WikiDataContainer {
 
-  public constructor(private readonly _allData: Map<WikiID, WikiDataEntity>,
-                     private readonly _conceptsWikiToOstisMap: Map<WikiID, OstisID>,
-                     private readonly _propertiesWikiToOstisMap: Map<WikiID, OstisID>,
-                     private readonly _instancesWikiToOstisMap: Map<WikiID, OstisID>,
-                     private readonly _classInstancesMap: Map<WikiID, Set<WikiID>>,
-                     private readonly _triplets: WikiTriplet[]) {
+  public constructor(private readonly _allData: Map<SemanticID, WikiDataEntity>,
+                     private readonly _conceptsWikiToOstisMap: Map<SemanticID, OstisID>,
+                     private readonly _propertiesWikiToOstisMap: Map<SemanticID, OstisID>,
+                     private readonly _instancesWikiToOstisMap: Map<SemanticID, OstisID>,
+                     private readonly _classInstancesMap: Map<SemanticID, Set<SemanticID>>,
+                     private readonly _triplets: SemanticTriplet[]) {
   }
 
-  public addInstanceForClass(classWikiId: WikiID, instancesToAdd: Set<WikiID>) {
+  public addInstanceForClass(classWikiId: SemanticID, instancesToAdd: Set<SemanticID>) {
     if (this._classInstancesMap.has(classWikiId)) {
       // @ts-ignore
       instancesToAdd.forEach(e => this._classInstancesMap.get(classWikiId).add(e));
@@ -21,45 +21,45 @@ export class WikiDataContainer {
     }
   }
 
-  public deleteByWikiIds(wikiIds: Set<WikiID>) {
-    removeIfMap(this._conceptsWikiToOstisMap, (k: WikiID) => wikiIds.has(k));
-    removeIfMap(this._instancesWikiToOstisMap, (k: WikiID) => wikiIds.has(k));
-    removeIfMap(this._propertiesWikiToOstisMap, (k: WikiID) => wikiIds.has(k));
-    removeIfMap(this._classInstancesMap, (k: WikiID) => wikiIds.has(k));
+  public deleteByWikiIds(wikiIds: Set<SemanticID>) {
+    removeIfMap(this._conceptsWikiToOstisMap, (k: SemanticID) => wikiIds.has(k));
+    removeIfMap(this._instancesWikiToOstisMap, (k: SemanticID) => wikiIds.has(k));
+    removeIfMap(this._propertiesWikiToOstisMap, (k: SemanticID) => wikiIds.has(k));
+    removeIfMap(this._classInstancesMap, (k: SemanticID) => wikiIds.has(k));
     this._classInstancesMap.forEach(e => {
-      removeIfSet(e, (k: WikiID) => wikiIds.has(k));
+      removeIfSet(e, (k: SemanticID) => wikiIds.has(k));
     });
-    removeIfMap(this._classInstancesMap, (k: WikiID, v: Set<WikiID>) => v.size === 0);
+    removeIfMap(this._classInstancesMap, (k: SemanticID, v: Set<SemanticID>) => v.size === 0);
     removeIfArray(this._triplets,
-      (e: WikiTriplet) => wikiIds.has(e.node1)
+      (e: SemanticTriplet) => wikiIds.has(e.node1)
         || wikiIds.has(e.property)
         || wikiIds.has(e.node2)
     );
-    removeIfMap(this._allData, (k: WikiID) => wikiIds.has(k));
+    removeIfMap(this._allData, (k: SemanticID) => wikiIds.has(k));
   }
 
 
-  get allData(): Map<WikiID, WikiDataEntity> {
+  get allData(): Map<SemanticID, WikiDataEntity> {
     return this._allData;
   }
 
-  get conceptsWikiToOstisMap(): Map<WikiID, OstisID> {
+  get conceptsWikiToOstisMap(): Map<SemanticID, OstisID> {
     return this._conceptsWikiToOstisMap;
   }
 
-  get propertiesWikiToOstisMap(): Map<WikiID, OstisID> {
+  get propertiesWikiToOstisMap(): Map<SemanticID, OstisID> {
     return this._propertiesWikiToOstisMap;
   }
 
-  get instancesWikiToOstisMap(): Map<WikiID, OstisID> {
+  get instancesWikiToOstisMap(): Map<SemanticID, OstisID> {
     return this._instancesWikiToOstisMap;
   }
 
-  get classInstancesMap(): Map<WikiID, Set<WikiID>> {
+  get classInstancesMap(): Map<SemanticID, Set<SemanticID>> {
     return this._classInstancesMap;
   }
 
-  get triplets(): WikiTriplet[] {
+  get triplets(): SemanticTriplet[] {
     return this._triplets;
   }
 }

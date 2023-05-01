@@ -1,14 +1,14 @@
-import type { WikiID, WmLanguageCode } from "./contanerTypes.js";
+import type { SemanticID, WmLanguageCode } from "./contanerTypes";
 
 class WikiDataEntity {
-  public constructor(private readonly _wikiId: WikiID,
+  public constructor(private readonly _wikiId: SemanticID,
                      private readonly _title: string,
                      private readonly _labels: Map<WmLanguageCode, string>,
                      private readonly _descriptions: Map<WmLanguageCode, string>) {
   }
 
 
-  get wikiId(): WikiID {
+  get wikiId(): SemanticID {
     return this._wikiId;
   }
 

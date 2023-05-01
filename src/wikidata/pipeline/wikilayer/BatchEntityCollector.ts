@@ -1,7 +1,7 @@
 import { mergeMaps, removeIfMap } from "../../model/collectionUtils";
-import type { WikiID, WikiTriplet, WmLanguageCode } from "../../model/contanerTypes";
+import type { SemanticID, SemanticTriplet, WmLanguageCode } from "../../model/contanerTypes";
 import { WikiDataContainer } from "../../model/WikiDataContainer";
-import type { WikiPipelineComponent } from "../WikiPipelineComponent";
+import type { WikiPipelineComponent } from "../../WikiPipelineComponent";
 import type { AxiosResponse } from "axios";
 import axios from "axios";
 
@@ -9,23 +9,23 @@ export class BatchEntityCollector implements WikiPipelineComponent {
 
   recursionDepth = 1;
   pagesCount = 1;
-  triplets: WikiTriplet[] = [];
-  conceptsMap: Map<WikiID, string> = new Map();
-  propertiesMap: Map<WikiID, string> = new Map();
-  instancesMap: Map<WikiID, string> = new Map();
+  triplets: SemanticTriplet[] = [];
+  conceptsMap: Map<SemanticID, string> = new Map();
+  propertiesMap: Map<SemanticID, string> = new Map();
+  instancesMap: Map<SemanticID, string> = new Map();
 
   keywords: Map<string, WmLanguageCode> = new Map();
-  wikiIds: WikiID[] = [];
+  wikiIds: SemanticID[] = [];
   requiredLanguages: WmLanguageCode[];
 
   wbk: any;
 
-  pulledEntityCache: Map<WikiID, any> = new Map();
+  pulledEntityCache: Map<SemanticID, any> = new Map();
 
   constructor(requiredLanguages: WmLanguageCode[],
               wbk: any,
               keywords?: Map<string, WmLanguageCode>,
-              wikiIds?: WikiID[],
+              wikiIds?: SemanticID[],
               recursionDepth?: number,
               pagesCount?: number) {
     this.wbk = wbk;
@@ -82,13 +82,13 @@ export class BatchEntityCollector implements WikiPipelineComponent {
     }
   }
 
-  private async recCollectWikiEntities(documentId: WikiID, recursionDepth: number) {
+  private async recCollectWikiEntities(documentId: SemanticID, recursionDepth: number) {
     if (recursionDepth == 0)
       return;
     if (!documentId.startsWith(`Q`) && !documentId.startsWith(`P`))
       throw new Error(`Parser can only work with Items(Q) and Properties(P), but not your item -- ` + documentId);
 
-    const connectedElements: Map<WikiID, WikiID[]> = new Map<WikiID, WikiID[]>();
+    const connectedElements: Map<SemanticID, SemanticID[]> = new Map<SemanticID, SemanticID[]>();
     const result = await this.pullEntity(documentId);
     if (result.claims) {
       mergeMaps(this.getConnectedElements(result.claims), connectedElements);
@@ -110,7 +110,7 @@ export class BatchEntityCollector implements WikiPipelineComponent {
     }
   }
 
-  private async pullEntity(id: WikiID): Promise<any> {
+  private async pullEntity(id: SemanticID): Promise<any> {
     if (this.pulledEntityCache.has(id)) {
       const entity = this.pulledEntityCache.get(id);
       if (!entity) throw new Error(`Inconsistency: entity with id ${id} is cached, but undefined`);
@@ -138,8 +138,8 @@ export class BatchEntityCollector implements WikiPipelineComponent {
     return result;
   }
 
-  private async convertTitlesToWikiIds(): Promise<WikiID[]> {
-    const result: WikiID[] = [];
+  private async convertTitlesToWikiIds(): Promise<SemanticID[]> {
+    const result: SemanticID[] = [];
     for (const [keyword, language] of this.keywords) {
       const temp = this.wbk.searchEntities({ search: keyword, language: language, limit: this.pagesCount });
       await axios.get(temp)
@@ -152,8 +152,8 @@ export class BatchEntityCollector implements WikiPipelineComponent {
     return result;
   }
 
-  private getConnectedElements(claims: any): Map<WikiID, WikiID[]> {
-    const result: Map<WikiID, WikiID[]> = new Map();
+  private getConnectedElements(claims: any): Map<SemanticID, SemanticID[]> {
+    const result: Map<SemanticID, SemanticID[]> = new Map();
     for (const claim in claims) {
       // @ts-ignore
       result.set(<`Q${number}` | `P${number}`>claim, claims[claim]

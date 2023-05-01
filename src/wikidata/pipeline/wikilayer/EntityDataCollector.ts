@@ -1,7 +1,7 @@
-import type { WikiID, WmLanguageCode } from "../../model/contanerTypes";
+import type { SemanticID, WmLanguageCode } from "../../model/contanerTypes";
 import { WikiDataContainer } from "../../model/WikiDataContainer";
 import { WikiDataEntity } from "../../model/WikiDataEntity";
-import type { WikiPipelineComponent } from "../WikiPipelineComponent";
+import type { WikiPipelineComponent } from "../../WikiPipelineComponent";
 import type { AxiosResponse } from "axios";
 import axios from "axios";
 // @ts-ignore
@@ -17,7 +17,7 @@ export class EntityDataCollector implements WikiPipelineComponent {
   async execute(): Promise<WikiDataContainer> {
     const container = await this.wikiProcessorPipeline.execute();
 
-    const pulledData = new Map<WikiID, WikiDataEntity>();
+    const pulledData = new Map<SemanticID, WikiDataEntity>();
     const allIds = [
       ...container.conceptsWikiToOstisMap.keys(),
       ...container.instancesWikiToOstisMap.keys(),
@@ -42,8 +42,8 @@ export class EntityDataCollector implements WikiPipelineComponent {
 
   }
 
-  private async pullDataForIds(wikiIds: WikiID[]): Promise<Map<WikiID, WikiDataEntity>> {
-    const result = new Map<WikiID, WikiDataEntity>();
+  private async pullDataForIds(wikiIds: SemanticID[]): Promise<Map<SemanticID, WikiDataEntity>> {
+    const result = new Map<SemanticID, WikiDataEntity>();
 
     const url = this.wbk.getEntities({
       ids: wikiIds,
@@ -51,7 +51,7 @@ export class EntityDataCollector implements WikiPipelineComponent {
       props: [`labels`, `descriptions`, `info`]
     });
 
-    const documents = new Map<WikiID, any>();
+    const documents = new Map<SemanticID, any>();
     return await axios.get(url)
       .then((response: AxiosResponse<WbGetEntitiesResponse>) => {
         // @ts-ignore

@@ -1,6 +1,6 @@
-import type { OstisID, WikiID } from "../../model/contanerTypes";
+import type { OstisID, SemanticID } from "../../model/contanerTypes";
 import type { WikiDataContainer } from "../../model/WikiDataContainer";
-import type { WikiPipelineComponent } from "../WikiPipelineComponent";
+import type { WikiPipelineComponent } from "../../WikiPipelineComponent";
 
 export class DeleteEntitiesWithInvalidOstisIdtf implements WikiPipelineComponent {
   constructor(private readonly wikiProcessorPipeline: WikiPipelineComponent) {
@@ -8,8 +8,8 @@ export class DeleteEntitiesWithInvalidOstisIdtf implements WikiPipelineComponent
 
   async execute(): Promise<WikiDataContainer> {
     const container = await this.wikiProcessorPipeline.execute();
-    const wikiIds = new Set<WikiID>();
-    const allMappers = new Map<WikiID, OstisID>([
+    const wikiIds = new Set<SemanticID>();
+    const allMappers = new Map<SemanticID, OstisID>([
       ...container.conceptsWikiToOstisMap.entries(),
       ...container.propertiesWikiToOstisMap.entries(),
       ...container.instancesWikiToOstisMap.entries()

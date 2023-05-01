@@ -1,5 +1,5 @@
 import type { WikiDataContainer } from "../../model/WikiDataContainer";
-import type { WikiPipelineComponent } from "../WikiPipelineComponent";
+import type { WikiPipelineComponent } from "../../WikiPipelineComponent";
 
 export class ClearIllegalCharactersFromDescription implements WikiPipelineComponent {
   constructor(private readonly wikiProcessorPipeline: WikiPipelineComponent) {

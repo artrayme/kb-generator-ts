@@ -1,15 +1,15 @@
-type WikiID = string;
+type SemanticID = string;
 type WmLanguageCode = string;
 type OstisID = string;
-type WikiTriplet = {
-  node1: WikiID;
-  property: WikiID;
-  node2: WikiID;
+type SemanticTriplet = {
+  node1: SemanticID;
+  property: SemanticID;
+  node2: SemanticID;
 };
 
 export type {
   OstisID,
-  WikiID,
-  WikiTriplet,
+  SemanticID,
+  SemanticTriplet,
   WmLanguageCode
 };
