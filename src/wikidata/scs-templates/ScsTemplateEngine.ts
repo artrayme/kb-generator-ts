@@ -1,5 +1,5 @@
-import type { OstisID, WikiID } from "../wikidata/model/contanerTypes.js";
-import type { WikiDataContainer } from "../wikidata/model/WikiDataContainer.js";
+import type { OstisID, SemanticID } from "../model/contanerTypes";
+import type { WikiDataContainer } from "../model/WikiDataContainer";
 import * as Eta from "eta";
 
 Eta.configure({
@@ -181,7 +181,7 @@ export const renderConcepts = (container: WikiDataContainer, template?: string):
   return result;
 };
 
-const renderSingleConcept = (container: WikiDataContainer, id: WikiID, template?: string): string => {
+const renderSingleConcept = (container: WikiDataContainer, id: SemanticID, template?: string): string => {
   const idtf = container.conceptsWikiToOstisMap.get(id);
   const labels: { text: string | undefined, lang: string | undefined }[] = [];
   const definitions: { text: string | undefined, lang: string | undefined }[] = [];
@@ -261,7 +261,7 @@ export const renderRelations = (container: WikiDataContainer, template?: string)
   return result;
 };
 
-const renderSingleRelation = (container: WikiDataContainer, id: WikiID, template?: string): string => {
+const renderSingleRelation = (container: WikiDataContainer, id: SemanticID, template?: string): string => {
   const idtf = container.propertiesWikiToOstisMap.get(id);
   const labels: { text: string | undefined, lang: string | undefined }[] = [];
   const definitions: { text: string | undefined, lang: string | undefined }[] = [];
@@ -348,7 +348,7 @@ export const renderInstances = (container: WikiDataContainer, template?: string)
 };
 
 
-const renderSingleInstance = (container: WikiDataContainer, id: WikiID, template?: string): string => {
+const renderSingleInstance = (container: WikiDataContainer, id: SemanticID, template?: string): string => {
   const idtf = container.instancesWikiToOstisMap.get(id);
   const labels: { text: string | undefined, lang: string | undefined }[] = [];
   const definitions: { text: string | undefined, lang: string | undefined }[] = [];

@@ -1,5 +1,5 @@
 import { mergeMaps, removeIfMap } from "../../model/collectionUtils";
-import type { SemanticID, SemanticTriplet, WmLanguageCode } from "../../model/contanerTypes";
+import type { OstisID, SemanticID, SemanticTriplet, WmLanguageCode } from "../../model/contanerTypes";
 import { WikiDataContainer } from "../../model/WikiDataContainer";
 import type { WikiPipelineComponent } from "../../WikiPipelineComponent";
 import type { AxiosResponse } from "axios";
@@ -10,26 +10,22 @@ export class BatchEntityCollector implements WikiPipelineComponent {
   recursionDepth = 1;
   pagesCount = 1;
   triplets: SemanticTriplet[] = [];
-  conceptsMap: Map<SemanticID, string> = new Map();
-  propertiesMap: Map<SemanticID, string> = new Map();
-  instancesMap: Map<SemanticID, string> = new Map();
+  conceptsMap: Map<SemanticID, OstisID> = new Map();
+  propertiesMap: Map<SemanticID, OstisID> = new Map();
+  instancesMap: Map<SemanticID, OstisID> = new Map();
 
   keywords: Map<string, WmLanguageCode> = new Map();
   wikiIds: SemanticID[] = [];
-  requiredLanguages: WmLanguageCode[];
-
-  wbk: any;
 
   pulledEntityCache: Map<SemanticID, any> = new Map();
 
-  constructor(requiredLanguages: WmLanguageCode[],
-              wbk: any,
+  constructor(private readonly wikiProcessorPipeline: WikiPipelineComponent,
+              private readonly requiredLanguages: WmLanguageCode[],
+              private readonly wbk: any,
               keywords?: Map<string, WmLanguageCode>,
               wikiIds?: SemanticID[],
               recursionDepth?: number,
               pagesCount?: number) {
-    this.wbk = wbk;
-    this.requiredLanguages = requiredLanguages;
     if (keywords != undefined)
       keywords.forEach((v, k) => {
         this.keywords.set(k, v);
@@ -44,6 +40,7 @@ export class BatchEntityCollector implements WikiPipelineComponent {
   }
 
   async execute(): Promise<WikiDataContainer> {
+    const container = await this.wikiProcessorPipeline.execute();
 
     // convert titles to entity ids
     const wikiIdsFromTitles = await this.convertTitlesToWikiIds();
@@ -53,13 +50,19 @@ export class BatchEntityCollector implements WikiPipelineComponent {
 
     await this.collectInfoAboutEntities();
 
-    return new WikiDataContainer(
-      new Map(),
-      this.conceptsMap,
-      this.propertiesMap,
-      this.instancesMap,
-      new Map(),
-      this.triplets);
+    for (const [k, v] of this.conceptsMap) {
+      container.conceptsWikiToOstisMap.set(k, v);
+    }
+    for (const [k,v] of this.propertiesMap){
+      container.propertiesWikiToOstisMap.set(k, v);
+    }
+    for (const [k,v] of this.instancesMap){
+      container.instancesWikiToOstisMap.set(k,v);
+    }
+    for (const triplet of this.triplets){
+      container.triplets.push(triplet);
+    }
+    return container
   }
 
   private async collectInfoAboutEntities() {
