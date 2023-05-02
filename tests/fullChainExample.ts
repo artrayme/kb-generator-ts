@@ -1,33 +1,26 @@
-import { renderConcepts, renderInstances, renderRelations } from "../src/scs-templates/ScsTemplateEngine.js";
-import type { WikiID, WmLanguageCode } from "../src/wikidata/model/contanerTypes.js";
 import {
-  ClearIllegalCharactersFromDescription
-} from "../src/wikidata/pipeline/ostislayer/ClearIllegalCharactersFromDescription.js";
-import {
-  DeleteEntitiesWithInvalidOstisIdtf
-} from "../src/wikidata/pipeline/ostislayer/DeleteEntitiesWithInvalidOstisIdtf.js";
-import { DeleteOstisIdDuplicates } from "../src/wikidata/pipeline/ostislayer/DeleteOstisIdDuplicates.js";
-import { FillMappingInfo } from "../src/wikidata/pipeline/ostislayer/FillMappingInfo.js";
-import { MapWikiToOstisRelationNames } from "../src/wikidata/pipeline/ostislayer/MapWikiToOstisRelationNames.js";
-import { BatchEntityCollector } from "../src/wikidata/pipeline/wikilayer/BatchEntityCollector.js";
-import { DeleteEntitiesWithoutLabels } from "../src/wikidata/pipeline/wikilayer/DeleteEntitiesWithoutLabels.js";
-import {
-  DeleteEntitiesWithoutTitle
-} from "../src/wikidata/pipeline/wikilayer/DeleteEntitiesWithoutTitle.js";
-import { EntityDataCollector } from "../src/wikidata/pipeline/wikilayer/EntityDataCollector.js";
-import { InstancesFromConcepts } from "../src/wikidata/pipeline/wikilayer/InstancesFromConcepts.js";
-import { test } from "vitest";
-import { PipelineInit } from "../src/wikidata/pipeline/PipelineInit";
-const  WBK =  require("wikibase-sdk");
+  BatchEntityCollector,
+  ClearIllegalCharactersFromDescription,
+  DeleteEntitiesWithInvalidOstisIdtf, DeleteEntitiesWithoutLabels, DeleteEntitiesWithoutTitle,
+  DeleteOstisIdDuplicates, EntityDataCollector, FillMappingInfo, InstancesFromConcepts,
+  MapWikiToOstisRelationNames,
+  PipelineInit, renderConcepts, renderInstances, renderRelations,
+  SemanticID,
+  WmLanguageCode
+} from "../src";
 
-test(`example full chain`, async () => {
+const WBK = require("wikibase-sdk");
+
+
+const myFun = async () => {
   const wdk = WBK({
     instance: `https://www.wikidata.org`,
     sparqlEndpoint: `https://query.wikidata.org/sparql`
   });
   const languages: WmLanguageCode[] = [`en`, `ru`];
+  const initElement = new PipelineInit();
   const mainCollector = new BatchEntityCollector(
-    new PipelineInit(),
+    initElement,
     languages,
     wdk,
     new Map([[`human`, `en`], [`Sport`, `en`]]),
@@ -37,9 +30,9 @@ test(`example full chain`, async () => {
     //[`Q647268`, `Q771376`, `Q860998`]
   );
 
-  const relationsInstanceOf = new Set<WikiID>([`P31`, `P106`, `P1855`]);
-  const relationsHasInstance = new Set<WikiID>([`P5869`]);
-  const relationsSubclassOf = new Set<WikiID>([`P279`]);
+  const relationsInstanceOf = new Set<SemanticID>([`P31`, `P106`, `P1855`]);
+  const relationsHasInstance = new Set<SemanticID>([`P5869`]);
+  const relationsSubclassOf = new Set<SemanticID>([`P279`]);
 
   const pipeline = new ClearIllegalCharactersFromDescription(
     new MapWikiToOstisRelationNames(
@@ -90,8 +83,10 @@ test(`example full chain`, async () => {
     result += v;
   });
 
-  console.log(result)
+  console.log(result);
 
   // const x = new BatchEntityCollector([`en`, `ru`], wdk, new Map([[`Sport`, `en`]]), [`P13`]);
-}, 600000);
+};
 
+myFun().then(r => {
+});
