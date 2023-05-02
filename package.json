@@ -1,6 +1,6 @@
 {
   "name": "kb-generator-ts",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "repository": "git+https://github.com/artrayme/kb-generator-ts.git",
   "author": "artrayme",
   "packageManager": "npm@8.19.2",
