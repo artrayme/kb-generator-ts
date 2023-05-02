@@ -418,15 +418,16 @@ class SCsWriter:
         elif content_type == 3:
             write_content = '"float:{}"'.format(content_data)
         elif content_type == 4:
-            write_content = path.split(self.output_path)[0] + "/" + content["file_name"]
-            f = open(write_content, "wb")
-            f.write(content_data)
-            f.close()
-            write_content = "file://" + path.split(write_content)[1]
-            is_url = True
-            if path.splitext(write_content)[1][1:] in ImageFormats:
-                image_format = ImageFormats.get(path.splitext(write_content)[1][1:])
-                is_image = True
+            write_content = '!!!This could be your picture, but it is not supported at the moment!!!'
+#             write_content = path.split(self.output_path)[0] + "/" + content["file_name"]
+#             f = open(write_content, "wb")
+#             f.write(content_data)
+#             f.close()
+#             write_content = "file://" + path.split(write_content)[1]
+#             is_url = True
+#             if path.splitext(write_content)[1][1:] in ImageFormats:
+#                 image_format = ImageFormats.get(path.splitext(write_content)[1][1:])
+#                 is_image = True
 
         else:
             msg = "Content type {} is not supported".format(content_type)
