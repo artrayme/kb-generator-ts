@@ -40,7 +40,6 @@ const myFun = async () => {
         new DeleteOstisIdDuplicates(
           new FillMappingInfo(
             new DeleteEntitiesWithoutTitle(
-              //new DeleteEntitiesByRelations(
               new DeleteEntitiesWithoutLabels(
                 new EntityDataCollector(
                   new InstancesFromConcepts(
@@ -52,8 +51,6 @@ const myFun = async () => {
                   wdk,
                   languages
                 )
-                //),
-                //new Set([`P2959`])
               )
             )
           )

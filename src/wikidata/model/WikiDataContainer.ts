@@ -4,62 +4,38 @@ import type { WikiDataEntity } from "./WikiDataEntity";
 
 export class WikiDataContainer {
 
-  public constructor(private readonly _allData: Map<SemanticID, WikiDataEntity>,
-                     private readonly _conceptsWikiToOstisMap: Map<SemanticID, OstisID>,
-                     private readonly _propertiesWikiToOstisMap: Map<SemanticID, OstisID>,
-                     private readonly _instancesWikiToOstisMap: Map<SemanticID, OstisID>,
-                     private readonly _classInstancesMap: Map<SemanticID, Set<SemanticID>>,
-                     private readonly _triplets: SemanticTriplet[]) {
+  public constructor(readonly allData: Map<SemanticID, WikiDataEntity>,
+                     readonly conceptsWikiToOstisMap: Map<SemanticID, OstisID>,
+                     readonly propertiesWikiToOstisMap: Map<SemanticID, OstisID>,
+                     readonly instancesWikiToOstisMap: Map<SemanticID, OstisID>,
+                     readonly classInstancesMap: Map<SemanticID, Set<SemanticID>>,
+                     readonly triplets: SemanticTriplet[]) {
   }
 
   public addInstanceForClass(classWikiId: SemanticID, instancesToAdd: Set<SemanticID>) {
-    if (this._classInstancesMap.has(classWikiId)) {
+    if (this.classInstancesMap.has(classWikiId)) {
       // @ts-ignore
-      instancesToAdd.forEach(e => this._classInstancesMap.get(classWikiId).add(e));
+      instancesToAdd.forEach(e => this.classInstancesMap.get(classWikiId).add(e));
     } else {
-      this._classInstancesMap.set(classWikiId, copySet(instancesToAdd));
+      this.classInstancesMap.set(classWikiId, copySet(instancesToAdd));
     }
   }
 
   public deleteByWikiIds(wikiIds: Set<SemanticID>) {
-    removeIfMap(this._conceptsWikiToOstisMap, (k: SemanticID) => wikiIds.has(k));
-    removeIfMap(this._instancesWikiToOstisMap, (k: SemanticID) => wikiIds.has(k));
-    removeIfMap(this._propertiesWikiToOstisMap, (k: SemanticID) => wikiIds.has(k));
-    removeIfMap(this._classInstancesMap, (k: SemanticID) => wikiIds.has(k));
-    this._classInstancesMap.forEach(e => {
+    removeIfMap(this.conceptsWikiToOstisMap, (k: SemanticID) => wikiIds.has(k));
+    removeIfMap(this.instancesWikiToOstisMap, (k: SemanticID) => wikiIds.has(k));
+    removeIfMap(this.propertiesWikiToOstisMap, (k: SemanticID) => wikiIds.has(k));
+    removeIfMap(this.classInstancesMap, (k: SemanticID) => wikiIds.has(k));
+    this.classInstancesMap.forEach(e => {
       removeIfSet(e, (k: SemanticID) => wikiIds.has(k));
     });
-    removeIfMap(this._classInstancesMap, (k: SemanticID, v: Set<SemanticID>) => v.size === 0);
-    removeIfArray(this._triplets,
+    removeIfMap(this.classInstancesMap, (k: SemanticID, v: Set<SemanticID>) => v.size === 0);
+    removeIfArray(this.triplets,
       (e: SemanticTriplet) => wikiIds.has(e.node1)
         || wikiIds.has(e.property)
         || wikiIds.has(e.node2)
     );
-    removeIfMap(this._allData, (k: SemanticID) => wikiIds.has(k));
+    removeIfMap(this.allData, (k: SemanticID) => wikiIds.has(k));
   }
 
-
-  get allData(): Map<SemanticID, WikiDataEntity> {
-    return this._allData;
-  }
-
-  get conceptsWikiToOstisMap(): Map<SemanticID, OstisID> {
-    return this._conceptsWikiToOstisMap;
-  }
-
-  get propertiesWikiToOstisMap(): Map<SemanticID, OstisID> {
-    return this._propertiesWikiToOstisMap;
-  }
-
-  get instancesWikiToOstisMap(): Map<SemanticID, OstisID> {
-    return this._instancesWikiToOstisMap;
-  }
-
-  get classInstancesMap(): Map<SemanticID, Set<SemanticID>> {
-    return this._classInstancesMap;
-  }
-
-  get triplets(): SemanticTriplet[] {
-    return this._triplets;
-  }
 }
