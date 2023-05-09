@@ -13,7 +13,6 @@ export const gwfToScs = (gwfXml: string, dataCallback: (scsText: string) => any,
   pythonProcess.stdin.setDefaultEncoding(`utf-8`);
   pythonProcess.stdin.write(gwfXml);
   pythonProcess.stdin.end();
-  pythonProcess.kill();
 };
 
 export const gwfToScsAsync = (gwfXml: string): Promise<string> => {
