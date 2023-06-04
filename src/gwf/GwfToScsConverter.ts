@@ -17,7 +17,7 @@ export const gwfToScs = (gwfXml: string, dataCallback: (scsText: string) => any,
 
 export const gwfToScsAsync = (gwfXml: string): Promise<string> => {
   return new Promise((resolve, reject) => {
-    const pythonProcess = spawn(`python`, [__dirname+`/python_scripts/gwf_to_scs.py`], { stdio: [`pipe`, `pipe`, `pipe`] });
+    const pythonProcess = spawn(`python3`, [__dirname+`/python_scripts/gwf_to_scs.py`], { stdio: [`pipe`, `pipe`, `pipe`] });
     let scsText = ``;
 
     pythonProcess.stdout.on(`data`, (data) => {
